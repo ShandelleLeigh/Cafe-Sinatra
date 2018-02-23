@@ -3,7 +3,7 @@ class Dishes < Sinatra::Base
     erb :home
   end
 
-  get "/dish/new" do
+  get "/dishes/new" do
     erb :new
   end
 
@@ -17,10 +17,10 @@ class Dishes < Sinatra::Base
     redirect "/dishes"
   end
 
-  get "/dishes/:id" do
-   @dish = Dish.find(params[:id])
-   erb :dish
-  end
+  # get "/dishes/:id" do
+  #  @dish = Dish.find(params[:id])
+  #  erb :dish
+  # end
 
   put "/dishes/:id" do
     dish = Dish.find(params[:id])
@@ -36,7 +36,7 @@ class Dishes < Sinatra::Base
     erb :dishes
   end
 
-  post "/dishes" do
+  post "/cafe" do
     Dish.create(
       title: params[:title],
       description: params[:description]
