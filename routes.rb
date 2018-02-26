@@ -3,6 +3,11 @@ class Dishes < Sinatra::Base
     erb :home
   end
 
+  # get "/public/styling.css" do
+  #   css :styling
+  # end
+
+
   get "/dishes/new" do
     erb :new
   end

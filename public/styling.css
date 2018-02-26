@@ -1,0 +1,26 @@
+.center{
+  background-color: green;
+  align-items: center;
+}
+.row{
+  background-color: yellow;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  background-color: navy;
+  color: white;
+
+}
+.box{background-color: red;}
+.box-title{background-color: red;}
+.box-action{background-color: red;}
+
+background{background-color: orange;}
+.title{}
+.input-field{}
+.btn{}
+.white-text{
+  font-family: sans-serif;
+  color: white;
+}
